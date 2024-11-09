@@ -10,6 +10,9 @@ django-ninja-jwt[crypto]
 # Define custom command-line commands
 rav
 
+# Handle and validate various datatypes
+pydantic[email]
+
 # Managing environment
 python-decouple
 
