@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     # Thrid-party
+    "corsheaders",
     "ninja_extra",
     "ninja_jwt",
     # Custom
@@ -51,6 +52,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
+    "corsheaders.middleware.CorsMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
@@ -59,6 +61,11 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = "project.urls"
+
+CORS_URLS_REGEX = r"^/api/.*"
+CORS_ALLOWED_ORIGINS = [
+    'http://127.0.0.1:3000', #next.js
+]
 
 TEMPLATES = [
     {

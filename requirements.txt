@@ -16,6 +16,9 @@ pydantic[email]
 # Managing environment
 python-decouple
 
+# Solve CORS errors
+django-cors-headers
+
 # Processing requests
 requests
 
