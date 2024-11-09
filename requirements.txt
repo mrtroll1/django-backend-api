@@ -1,0 +1,20 @@
+# Django framework
+Django>=5.0,<5.2
+
+# Building REST API
+django-ninja
+
+# Token authentication
+django-ninja-jwt[crypto]
+
+# Define custom command-line commands
+rav
+
+# Managing environment
+python-decouple
+
+# Processing requests
+requests
+
+# SSL certificates on local machine
+certifi
